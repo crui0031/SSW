@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="generic.css">
+    <title>{% block title %}Placeholder Title{% endblock %}</title>
+</head>
+<body>
+    <div id="container">
+
+        <div class="stripe" id="'header">
+            <div class="stripe-header">
+                SSW Field Placement
+            </div>
+            <div class="stripe-subheader">
+                Algonquin College
+            </div>
+        </div>
+
+        <div class="stripe" id="navbar">
+
+
+            {% block nav_content %}Replace this with nav bar items{% endblock %}
+
+
+        </div>
+
+        <div id="page-container">
+
+
+            {% block page_content %}Replace this with page content{% endblock %}
+
+
+        </div>
+
+        <div class="stripe" id="footer">
+
+        </div>
+
+    </div>
+</body>
+</html>
